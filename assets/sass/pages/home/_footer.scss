@@ -11,7 +11,7 @@
     @include display-flex;
     
     .card-title {
-      margin-bottom: 12px;
+      margin-bottom: 18px;
       color: $white;
       font-size: 13px;
 
@@ -25,6 +25,7 @@
 
     ul {
       @include display-flex;
+      gap: 2px;
       @include flex-direction(column);
     }
 
@@ -58,6 +59,10 @@
     }
   }
 
+  &__social--title {
+    margin: 25px 0 3px;
+    text-transform: capitalize;
+  }
 
   &__copy {
     padding: 10px 0;
