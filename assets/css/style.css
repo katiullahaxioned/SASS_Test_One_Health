@@ -837,11 +837,65 @@ li {
   resize: vertical;
 }
 .appointment__form--control {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 .appointment__form--control input {
-  padding: 10px 25px;
+  padding: 9px 18px 8px;
   border: none;
+  font-size: 12px;
+}
+
+.application__wrapper {
+  width: 100%;
+  padding: 37px 24% 0;
+  gap: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: url(../../../../assets/images/application_bg.png);
+}
+.application__figure {
+  -webkit-box-shadow: 0 0 3px #555;
+  box-shadow: 0 0 3px #555;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.application__text {
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+.application__title {
+  margin-bottom: 9px;
+  color: #fff;
+  text-shadow: 0 0 5px #555;
+}
+.application__links {
+  gap: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.application__links li {
+  width: 138px;
+  cursor: pointer;
+}
+.application__links img {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px #555;
+  box-shadow: 0 0 3px #555;
 }
 
 /*# sourceMappingURL=style.css.map */
