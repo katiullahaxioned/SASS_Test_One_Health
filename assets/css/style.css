@@ -768,4 +768,80 @@ li {
   padding: 8px 21px;
 }
 
+.appointment__wrapper {
+  width: 100%;
+  padding: 58px 31% 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.appointment__title {
+  font-size: 25px;
+  word-spacing: 2px;
+}
+.appointment__form {
+  width: 100%;
+  margin-top: 40px;
+  gap: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.appointment__form--group {
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 48%;
+}
+.appointment__form--group * {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #000;
+}
+.appointment__form--number, .appointment__form--textarea, .appointment__form--control {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+.appointment__form select {
+  background-color: transparent;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+.appointment__form input[type=date] {
+  font-size: 11px;
+}
+.appointment__form--textarea {
+  height: 119px;
+}
+.appointment__form--textarea textarea {
+  height: 100%;
+  resize: vertical;
+}
+.appointment__form--control {
+  margin-top: 5px;
+}
+.appointment__form--control input {
+  padding: 10px 25px;
+  border: none;
+}
+
 /*# sourceMappingURL=style.css.map */
