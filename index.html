@@ -1,53 +1,93 @@
 <!doctype html>
-
-<!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en"> 
-
 <head>
- 
   <meta charset="utf-8">
-
-  <title>Client</title>
-  
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
-  
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <!-- <meta name="keywords" lang="en" content=""> -->
-  
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
-  <!-- To adhear no-cache for Chrome -->
-<!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-store, no-cache" />
-  <meta http-equiv="Expires" content="0" /> -->
-
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <title>One Health</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="favicon.ico" />
-
   <!--font-awesome link for icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
-
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
-      
+    <header class="header">
+      <!--header-top section start-->
+      <div class="header__top">
+        <div class="wrapper header__top--wrapper">
+          <ul class="header__contact">
+            <li>
+              <a href="tel:0012344556666" title="+00 123 4455 6666">+00 123 4455 6666</a>
+            </li>
+            <li>
+              <a href="mailto:mail@example.com" title="mail@example.com">mail@example.com</a>
+            </li>
+          </ul>
+          <ul class="header__social">
+            <li>
+              <a href="#FIXME" target="_blank" title="Facebook">Facebook</a>
+            </li>
+            <li>
+              <a href="#FIXME" target="_blank" title="Twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="#FIXME" target="_blank" title="Dribbble">dribbble</a>
+            </li>
+            <li>
+              <a href="#FIXME" target="_blank" title="Instagram">instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--header-top section end-->
+      <!--header-bottom section start-->
+      <div class="header__bottom">
+        <div class="wrapper header__bottom--wrapper">
+          <h1 class="header__logo">
+            <a href="index.html" title="One Health">
+              <img src="assets/images/logo.png" alt="One Health">
+            </a>
+          </h1>
+          <form action="#FIXME" method="get" class="header__form" name="headerForm">
+            <div class="header__form--control">
+              <button type="button">search</button>
+            </div>
+            <div class="header__form--group">
+              <input type="text" name="headerSearch" placeholder="enter keyword.." autocomplete="off">
+            </div>
+          </form>
+          <div class="header__hamburger">
+            <span class="header__hamburger--bar">bar</span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav--menu">
+              <li>
+                <a href="index.html" title="Home">Home</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="About us">About us</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Doctors">Doctors</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="News">News</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__login">
+            <a href="#FIXME" title="Login / Register" class="button header__login--button">Login / Register</a>
+          </div>
+        </div>
+      </div>
+      <!--header-bottom section end-->
     </header>
     <!--header section end-->
     <!--main section start-->
@@ -61,11 +101,7 @@
 
     </footer>
     <!--footer section end-->
-
   </div>
   <!--container end-->
-
-<!-- <script src="assets/vendor/jquery-1.8.3.min.js"></script>
-<script src="assets/js/script.js"></script> -->
 </body>
 </html>
