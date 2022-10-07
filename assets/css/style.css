@@ -668,4 +668,104 @@ li {
   content: "\f061";
 }
 
+.news__wrapper {
+  width: 100%;
+  padding: 57px 22.4% 58px;
+  background-color: #F5F9F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.news__title {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.news__lists {
+  width: 100%;
+  margin: 40px 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.news__lists li {
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 0 3px #A1AAA7;
+  box-shadow: 0 0 3px #A1AAA7;
+  -ms-flex-preferred-size: 25.5%;
+  flex-basis: 25.5%;
+}
+.news__lists a {
+  color: #000;
+}
+.news__lists a:hover {
+  color: #3ED9A5;
+}
+.news__lists--text {
+  padding: 9px 12px 8px;
+}
+.news__lists--title {
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.news__lists--tag {
+  padding: 3px 5px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background-color: #4E59FE;
+  color: #fff;
+  font-size: 9px;
+  text-transform: capitalize;
+}
+.news__source {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.news__source span {
+  color: #555;
+  font-size: 8px;
+}
+.news__source img {
+  border-radius: 50%;
+}
+.news__source--name {
+  margin: 0 7px 0 4px;
+  text-transform: capitalize;
+}
+.news__source--time::before {
+  margin-right: 5px;
+  content: "\f017";
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+.news__readMore--button {
+  padding: 8px 21px;
+}
+
 /*# sourceMappingURL=style.css.map */
