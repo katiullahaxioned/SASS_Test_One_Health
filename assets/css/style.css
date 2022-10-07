@@ -171,6 +171,12 @@ li {
   text-transform: capitalize;
 }
 
+.card-title {
+  color: #2E3B38;
+  font-size: 14px;
+  line-height: 1;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1366px;
@@ -326,6 +332,12 @@ li {
   color: #3ED9A5;
   font-size: 11px;
   text-indent: -99999px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__form button:hover {
+  color: #27ae60;
 }
 .header__form button::before {
   content: "\f002";
@@ -552,6 +564,108 @@ li {
 .welcome__figure {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+
+.doctors__wrapper {
+  width: 100%;
+  padding: 58px 23.5% 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.doctors__title {
+  text-transform: capitalize;
+}
+.doctors__lists {
+  width: 100%;
+  margin: 45px 0 28px;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.doctors__lists li {
+  border-radius: 5px;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-shadow: 0 0 3px #A1AAA7;
+  box-shadow: 0 0 3px #A1AAA7;
+}
+.doctors__lists figure {
+  overflow: hidden;
+}
+.doctors__lists figure img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.doctors__lists figure img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.doctors__lists--text {
+  padding: 14px 14px 8px;
+}
+.doctors__lists--text span {
+  color: #A1AAA7;
+  font-size: 10px;
+}
+.doctors__controls {
+  border-radius: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.doctors__controls > * {
+  width: 28px;
+  height: 27px;
+  position: relative;
+  background-color: #3ED9A5;
+  color: #fff;
+  cursor: pointer;
+  font-size: 10px;
+  text-indent: -99999px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.doctors__controls > *:hover {
+  background-color: #27ae60;
+}
+.doctors__controls > *::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "fontAwesome";
+  text-indent: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.doctors__controls > *:first-child::before {
+  content: "\f060";
+}
+.doctors__controls > *:last-child::before {
+  content: "\f061";
 }
 
 /*# sourceMappingURL=style.css.map */

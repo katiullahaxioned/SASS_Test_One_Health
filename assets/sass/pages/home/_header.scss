@@ -107,6 +107,9 @@
         color: $greenLight;
         font-size: 11px;
         text-indent: -99999px;
+        @include transition;
+
+        &:hover { color: $greenDark; }
 
         &::before {
           @include fontAwesome(map-get($fontAwesome, search));
