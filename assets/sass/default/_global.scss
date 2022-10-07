@@ -50,6 +50,20 @@ li {
   &:hover { background-color: $greenDark; }
 }
 
+.section-title {
+  color: $greyDark;
+  font-size: 26px;
+  line-height: 1.4;
+
+  &::first-letter { text-transform: uppercase; }
+
+  span {
+    display: inline;
+    text-transform: capitalize;
+  }
+}
+
+
 /*for wrapper*/
 .wrapper {
   max-width: 1366px;
