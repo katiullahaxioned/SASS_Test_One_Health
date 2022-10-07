@@ -1,0 +1,417 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type=radio] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type=button],
+input[type=submit],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+span {
+  display: inline-block;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type],
+button,
+select,
+textarea {
+  outline: none;
+}
+
+::placeholder {
+  font-size: 11px;
+  color: #A1AAA7;
+  text-transform: capitalize;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.button {
+  padding: 6px 15px;
+  border-radius: 3px;
+  background-color: #3ED9A5;
+  color: #fff;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.button:hover {
+  background-color: #27ae60;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1366px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header__top--wrapper {
+  width: 100%;
+  padding: 0 20%;
+  border-bottom: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.header__contact a {
+  padding: 0 14px;
+  color: #A1AAA7;
+  font-size: 9px;
+}
+.header__contact a:hover {
+  color: #3ED9A5;
+}
+.header__contact a::before {
+  margin-right: 5px;
+  color: #3ED9A5;
+  font-size: 13px;
+  vertical-align: middle;
+}
+.header__contact li {
+  font-size: 0;
+}
+.header__contact li:first-child a {
+  padding-left: 0;
+  border-right: 1px solid #A1AAA7;
+}
+.header__contact li:first-child a::before {
+  content: "\f095";
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+.header__contact li:last-child a {
+  padding-left: 12px;
+}
+.header__contact li:last-child a::before {
+  font-size: 10px;
+  vertical-align: text-top;
+  content: "\f0e0";
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+
+.header__social {
+  gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.header__social a {
+  width: 20px;
+  position: relative;
+  color: #A1AAA7;
+  font-size: 10px;
+  text-indent: -99999px;
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+.header__social a:hover {
+  color: #3ED9A5;
+}
+.header__social a::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "fontAwesome";
+  text-indent: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.header__social li:nth-child(1) a::before {
+  content: "\f09a";
+}
+.header__social li:nth-child(2) a::before {
+  content: "\f099";
+}
+.header__social li:nth-child(3) a::before {
+  content: "\f17d";
+}
+.header__social li:nth-child(4) a::before {
+  content: "\f16d";
+}
+
+.header__bottom--wrapper {
+  width: 100%;
+  padding: 10px 20% 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.header__logo {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.header__form {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 0 12.8% 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__form input, .header__form button {
+  padding: 7px 10px;
+  border: none;
+  background-color: transparent;
+}
+.header__form button {
+  padding: 8px 14px;
+  border-right: 1px solid #ddd;
+  position: relative;
+  color: #3ED9A5;
+  font-size: 11px;
+  text-indent: -99999px;
+}
+.header__form button::before {
+  content: "\f002";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "fontAwesome";
+  text-indent: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.header__form input {
+  width: 173px;
+}
+.header__form input::placeholder {
+  color: #555;
+}
+
+.header__hamburger {
+  width: 30px;
+  height: 30px;
+  display: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+}
+.header__hamburger--bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #3ED9A5;
+  text-indent: -99999px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__hamburger--bar::before, .header__hamburger--bar::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: absolute;
+  left: 0;
+  background-color: inherit;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__hamburger--bar::before {
+  top: -13px;
+}
+.header__hamburger--bar::after {
+  top: 13px;
+}
+.header__hamburger:hover .header__hamburger--bar {
+  -webkit-transform: translateY(-50%) rotate(135deg);
+  -ms-transform: translateY(-50%) rotate(135deg);
+  transform: translateY(-50%) rotate(135deg);
+}
+.header__hamburger:hover .header__hamburger--bar::before {
+  display: none;
+}
+.header__hamburger:hover .header__hamburger--bar::after {
+  top: 0;
+  -webkit-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+}
+
+.header__nav--menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.header__nav--menu a {
+  margin-right: 25px;
+  color: #A1AAA7;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.header__nav--menu a:hover {
+  color: #3ED9A5;
+}
+.header__nav--menu li:first-child a {
+  color: #3ED9A5;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -191,6 +191,12 @@
   transform: $value;
 }
 
+@mixin relative-icon($content) {
+  content: '#{$content}';
+  font-family: 'fontAwesome';
+  text-indent: 0;
+}
+
 @mixin fontAwesome($content) {
   content: '#{$content}';
   position: absolute;
